@@ -42,7 +42,7 @@ node main.js
 
 # Structure
 
-```c
+```css
 ├── commands/       Contains all bot commands
 │ └── example.js    Example of 'example' command
 ├── events/         Contains events (e.g. ready, messageCreate)
