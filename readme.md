@@ -11,11 +11,11 @@ A bot token that you can generate via the [Discord Developer Portal](https://dis
 
 # Install :
 
-js
+```js
 npm install
 ```
 
-- Configure .env file:
+# Configure .env file:
 
 Rename the example-env.js file to .env and fill it with your bot token and the rest of the information:
 
