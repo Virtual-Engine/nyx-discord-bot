@@ -1,7 +1,6 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const { log } = require("nyx-logger");
-const { Player } = require('discord-player');
 const { REST, Routes, IntentsBitField, Partials } = require('discord.js');
 const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
 const config = require("./config");
@@ -26,10 +25,6 @@ log("dev", `Client ID : ${process.env.ID}`);
 
 const client = new Client({ intents: intent, partials: [Partials.Message, Partials.Channel] });
 client.commands = new Collection();
-
-client.player = new Player(client, config.opt.discordPlayer);
-
-require('./events/musique/Events')(client);
 
 const eventsPath = path.join(__dirname, 'events');
 const eventFiles = fs.readdirSync(eventsPath).filter(file => file.endsWith('.js'));
