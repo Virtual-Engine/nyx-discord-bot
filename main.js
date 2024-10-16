@@ -3,7 +3,6 @@ const path = require('node:path');
 const { log } = require("nyx-logger");
 const { REST, Routes, IntentsBitField, Partials } = require('discord.js');
 const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
-const config = require("./config");
 const colors = require("colors")
 const intent = require('./intents');
 
